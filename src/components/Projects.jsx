@@ -4,74 +4,95 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'SaaS Analytics Dashboard',
+      title: 'Vanforces (Admin Panel)',
       overview:
-        'A comprehensive analytics platform for SaaS companies to track user engagement, revenue metrics, and product performance in real-time.',
+        'A comprehensive SaaS application based on van sales concept, featuring complete admin-side functionality for managing sales operations, tracking salesmen, and handling transactions.',
       problem:
-        'SaaS businesses needed a unified dashboard to monitor key metrics across multiple data sources without switching between tools.',
+        'Van sales businesses needed a centralized admin system to manage sales operations, track field salesmen in real-time, handle transactions, and generate invoices with regulatory compliance.',
       features: [
-        'Real-time data visualization with custom charts',
-        'Multi-tenant architecture with role-based access',
-        'Export reports in PDF and CSV formats',
-        'Customizable dashboard widgets and filters',
-        'WebSocket integration for live updates'
+        'Role-based authentication and access control',
+        'Real-time salesman tracking via mobile app settings with Google Maps integration',
+        'Live chat functionality using Socket.io for instant communication',
+        'Real-time notifications system',
+        'Invoice printing and generation using react-pdf',
+        'Transaction management for sales, collection, and load operations',
+        'E-invoicing integration with ZATCA for regulatory compliance',
+        'Custom report creation UI with dynamic column selection and report generation'
       ],
-      techStack: ['React', 'Redux', 'TypeScript', 'REST APIs', 'Chart.js', 'WebSockets', 'Performance Optimization'],
-      liveDemo: '#',
+      techStack: ['React', 'Ant Design', 'Socket.io', 'Google Maps API', 'REST APIs', 'react-pdf', 'ZATCA Integration'],
+      liveDemo: 'https://admin.dev.vanforces.com/',
       github: '#'
     },
     {
       id: 2,
-      title: 'Client Portal Platform',
+      title: 'Vanforces – Super Admin',
       overview:
-        'A white-label client portal that enables service businesses to manage client relationships, projects, and communications in one place.',
+        'Office-level super admin system for managing plans, pricing, user subscriptions, and overall platform administration with scalable architecture.',
       problem:
-        'Service agencies were using multiple disconnected tools for client management, leading to inefficiency and poor client experience.',
+        'The platform required a centralized super admin system to manage multiple tenants, subscription plans, pricing tiers, and user management at the organizational level.',
       features: [
-        'Project tracking with status workflows',
-        'Secure file sharing and document management',
-        'Integrated messaging and notification system',
-        'Invoice generation and payment processing',
-        'Responsive design for mobile and desktop'
+        'Plan and pricing management system',
+        'User and subscription management',
+        'Multi-tenant administration',
+        'Scalable and maintainable architecture',
+        'Clean, professional UI layouts'
       ],
-      techStack: ['React', 'Custom Hooks', 'Context API', 'REST APIs', 'Responsive Design', 'Performance Optimization'],
-      liveDemo: '#',
+      techStack: ['React', 'TypeScript', 'Shadcn UI', 'REST APIs', 'State Management'],
+      liveDemo: 'https://admin.dev.vanforces.com/',
       github: '#'
     },
     {
       id: 3,
-      title: 'E-Commerce Admin Panel',
+      title: 'Skipee (Restaurant Management System)',
       overview:
-        'A full-featured admin dashboard for e-commerce businesses to manage inventory, orders, customers, and analytics.',
+        'A comprehensive restaurant management application for handling orders, table management, staff coordination, and complete restaurant workflow operations.',
       problem:
-        'E-commerce store owners required an intuitive admin interface to handle complex inventory management and order processing efficiently.',
+        'Restaurants needed an integrated system to manage daily operations including order processing, table assignments, staff management, and workflow coordination.',
       features: [
-        'Product catalog management with bulk operations',
-        'Order processing and fulfillment tracking',
-        'Customer relationship management (CRM)',
-        'Sales analytics and reporting dashboard',
-        'Inventory alerts and low-stock notifications'
+        'Order management and processing system',
+        'Table assignment and management',
+        'Staff management and coordination',
+        'Complete restaurant workflow management',
+        'Production-ready, detailed system design'
       ],
-      techStack: ['React', 'Redux', 'TypeScript', 'REST APIs', 'State Architecture', 'CI/CD'],
-      liveDemo: '#',
+      techStack: ['React', 'Material UI', 'REST APIs', 'State Management'],
+      liveDemo: 'https://spstg-skippy.texol.work/',
       github: '#'
     },
     {
       id: 4,
-      title: 'Healthcare Appointment System',
+      title: 'Skipee Admin',
       overview:
-        'A patient management system for healthcare clinics to handle appointments, patient records, and clinic scheduling.',
+        'Admin panel for managing multiple restaurants under the Skipee platform, providing centralized management and comprehensive reporting capabilities.',
       problem:
-        'Healthcare clinics needed a reliable system to manage appointments, reduce no-shows, and streamline patient check-in processes.',
+        'The platform required a centralized admin system to manage multiple restaurant locations, track performance across venues, and provide unified reporting.',
       features: [
-        'Appointment scheduling with calendar integration',
-        'Patient record management with search and filters',
-        'Automated SMS and email reminders',
-        'Waitlist management and appointment rescheduling',
-        'HIPAA-compliant data handling and security'
+        'Multi-restaurant management',
+        'Centralized reporting and analytics',
+        'Restaurant performance tracking',
+        'Unified dashboard for platform administration'
       ],
-      techStack: ['React', 'JavaScript (ES6+)', 'Context API', 'REST APIs', 'Responsive Design', 'Error Handling'],
-      liveDemo: '#',
+      techStack: ['React', 'Tailwind CSS', 'REST APIs', 'State Management'],
+      liveDemo: 'https://skippy-stg.texol.work/',
+      github: '#'
+    },
+    {
+      id: 5,
+      title: 'Alamawasil Web Portal',
+      overview:
+        'A web portal for bulk invoice management, digital signing, and ZATCA integration, with comprehensive admin features for customer and invoice tracking.',
+      problem:
+        'Businesses needed a system to handle bulk invoice processing, digital signing workflows, ZATCA compliance, and comprehensive invoice management with detailed reporting.',
+      features: [
+        'Bulk invoice upload and processing',
+        'Digital signing functionality',
+        'ZATCA integration for regulatory compliance',
+        'Customer management system',
+        'Invoice tracking and status monitoring',
+        'Detailed reporting on uploaded invoices and processing status'
+      ],
+      techStack: ['React', 'TypeScript', 'Shadcn UI', 'REST APIs', 'ZATCA Integration'],
+      liveDemo: 'https://admin.almawasil.com/',
       github: '#'
     }
   ];

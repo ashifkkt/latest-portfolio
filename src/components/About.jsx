@@ -8,21 +8,21 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              With 3+ years of professional experience, I've architected and built React applications
-              serving hundreds of thousands of users across various industries. My approach centers on
-              solving real business challenges through well-structured code, scalable architecture, and
-              data-driven decision making.
+              I'm a React developer with 3+ years of professional experience building product-based SaaS applications.
+              I completed my B.Tech in Computer Science from MES College of Engineering, Kuttipuram (2017–2021), followed
+              by a MERN Stack internship at Tseep Academy. Since September 2022, I've been working as a Frontend Developer
+              at Texol iCohort, where I focus on building scalable frontend architectures for production SaaS applications.
             </p>
             <p>
-              I specialize in building maintainable, performant React applications that scale. This includes
-              establishing robust component architectures, implementing efficient state management patterns,
-              and optimizing for performance at scale. I write code that other developers can understand,
-              extend, and maintain long-term.
+              My work centers on product-based development—building and maintaining complex React frontends with clean architecture,
+              implementing role-based access control, real-time features, comprehensive dashboards, and admin panels. I prioritize
+              performance, maintainability, and user experience while collaborating closely with backend teams, product managers,
+              and designers to deliver features that meet both technical and business requirements.
             </p>
             <p>
-              I work closely with cross-functional teams—product managers, designers, and backend engineers—to
-              deliver features that align technical excellence with business objectives. I've led code reviews,
-              mentored junior developers, and established coding standards that improve team velocity and code quality.
+              I have familiarity with backend technologies including Node.js, Python, and basic Go, which helps me collaborate
+              effectively with backend teams and make informed architectural decisions. My experience spans from building complete
+              admin systems to implementing real-time features, third-party integrations, and complex data management workflows.
             </p>
           </div>
         </div>

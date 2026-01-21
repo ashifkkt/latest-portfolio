@@ -3,28 +3,32 @@ import './Skills.css';
 const Skills = () => {
   const skillCategories = [
     {
-      category: 'Core Technologies',
-      skills: ['React', 'JavaScript (ES6+)', 'TypeScript']
+      category: 'Frontend',
+      skills: ['React.js', 'JavaScript (ES6+)', 'TypeScript']
     },
     {
-      category: 'State Management',
-      skills: ['Redux', 'Context API', 'Custom Hooks', 'State Architecture']
+      category: 'UI Libraries',
+      skills: ['Ant Design', 'Material UI', 'Shadcn UI', 'Tailwind CSS']
     },
     {
-      category: 'Performance & Optimization',
-      skills: ['Code Splitting', 'Lazy Loading', 'Bundle Optimization', 'Memoization']
+      category: 'State & Data',
+      skills: ['Redux', 'Context API']
     },
     {
-      category: 'APIs & Integration',
-      skills: ['REST APIs', 'Error Handling', 'Async Patterns', 'API Architecture']
+      category: 'Real-Time & Integrations',
+      skills: ['Socket.io', 'Google Maps API', 'REST APIs']
     },
     {
-      category: 'Development Practices',
-      skills: ['Component Architecture', 'Code Reviews', 'Testing', 'Git Workflow']
+      category: 'Backend Knowledge',
+      skills: ['Node.js', 'Python', 'Basic Go']
     },
     {
-      category: 'Deployment & Tools',
-      skills: ['CI/CD', 'Production Deployment', 'Performance Monitoring', 'Debugging']
+      category: 'Tools & Build',
+      skills: ['Git', 'GitHub', 'Vite', 'NPM']
+    },
+    {
+      category: 'Deployment',
+      skills: ['Vercel', 'Netlify']
     }
   ];
 

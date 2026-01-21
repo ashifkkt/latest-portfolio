@@ -27,20 +27,26 @@ const Contact = () => {
   const contactInfo = [
     {
       type: 'Email',
-      value: 'john.doe@example.com',
-      link: 'mailto:john.doe@example.com',
+      value: 'ashifkkt1010@gmail.com',
+      link: 'mailto:ashifkkt1010@gmail.com',
       icon: '✉️'
     },
     {
+      type: 'LinkedIn',
+      value: 'Connect on LinkedIn',
+      link: 'https://www.linkedin.com/in/ashif-kkt/',
+      icon: '💼'
+    },
+    {
       type: 'GitHub',
-      value: 'github.com/johndoe',
-      link: 'https://github.com/johndoe',
+      value: 'View My Code',
+      link: 'https://github.com/ashifkkt',
       icon: '💻'
     },
     {
       type: 'Fiverr',
       value: 'View My Services',
-      link: 'https://www.fiverr.com/johndoe',
+      link: 'https://www.fiverr.com/s/99D5Z0j',
       icon: '🚀'
     }
   ];
@@ -52,10 +58,10 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-info">
             <p className="contact-intro">
-              I help businesses and startups build production-ready React applications that scale.
-              Whether you need a new application built from scratch, an existing codebase optimized,
-              or a complex feature implemented, I deliver solutions that meet your technical and
-              business requirements.
+              I specialize in building production-ready React applications for SaaS products, admin panels,
+              and enterprise dashboards. Whether you need a complete frontend application, real-time features,
+              third-party integrations, or complex admin systems, I deliver scalable solutions that meet
+              your business requirements.
             </p>
             <div className="contact-cta">
               <p className="contact-cta-text">Get in touch via:</p>
@@ -117,8 +123,8 @@ const Contact = () => {
             </button>
             <p className="form-note">
               Prefer email? Reach out directly at{' '}
-              <a href="mailto:john.doe@example.com" className="form-email-link">
-                john.doe@example.com
+              <a href="mailto:ashifkkt1010@gmail.com" className="form-email-link">
+                ashifkkt1010@gmail.com
               </a>
             </p>
           </form>

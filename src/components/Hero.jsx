@@ -13,14 +13,14 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">
-            <span className="hero-name">John Doe</span>
+            <span className="hero-name">Mohamed Ashif</span>
           </h1>
-          <h2 className="hero-subtitle">Senior React.js Developer</h2>
+          <h2 className="hero-subtitle">React.js Developer</h2>
           <p className="hero-description">
-            I architect and build enterprise-grade React applications that scale to serve 
-            hundreds of thousands of users. With 3+ years of experience in complex state management, 
-            performance optimization, and modern development practices, I deliver production-ready 
-            solutions that drive measurable business outcomes.
+            React developer with 3+ years of experience building scalable, responsive, and 
+            production-ready web applications. I specialize in building SaaS products, admin panels, 
+            and complex frontend architectures that handle real-time features, role-based access, 
+            and enterprise-level requirements.
           </p>
           <div className="hero-buttons">
             <button

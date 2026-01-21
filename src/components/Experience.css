@@ -1,0 +1,102 @@
+.experience {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.experience-timeline {
+  max-width: 900px;
+  margin: 3rem auto 0;
+}
+
+.experience-item {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #3498db;
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+.experience-header {
+  margin-bottom: 1.5rem;
+}
+
+.experience-position {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.experience-company-period {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.experience-company {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #3498db;
+}
+
+.experience-period {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+}
+
+.experience-description {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-description li {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.experience-description li:before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.experience-description li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 3rem 0;
+  }
+
+  .experience-timeline {
+    margin-top: 2rem;
+  }
+
+  .experience-item {
+    padding: 1.5rem;
+  }
+
+  .experience-position {
+    font-size: 1.25rem;
+  }
+
+  .experience-company-period {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
+

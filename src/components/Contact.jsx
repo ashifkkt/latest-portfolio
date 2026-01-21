@@ -28,43 +28,54 @@ const Contact = () => {
     {
       type: 'Email',
       value: 'john.doe@example.com',
-      link: 'mailto:john.doe@example.com'
-    },
-    {
-      type: 'LinkedIn',
-      value: 'linkedin.com/in/johndoe',
-      link: 'https://linkedin.com/in/johndoe'
+      link: 'mailto:john.doe@example.com',
+      icon: '✉️'
     },
     {
       type: 'GitHub',
       value: 'github.com/johndoe',
-      link: 'https://github.com/johndoe'
+      link: 'https://github.com/johndoe',
+      icon: '💻'
+    },
+    {
+      type: 'Fiverr',
+      value: 'View My Services',
+      link: 'https://www.fiverr.com/johndoe',
+      icon: '🚀'
     }
   ];
 
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2 className="section-title">Get In Touch</h2>
+        <h2 className="section-title">Let's Work Together</h2>
         <div className="contact-content">
           <div className="contact-info">
             <p className="contact-intro">
-              I'm always open to discussing new opportunities, interesting projects,
-              or just having a conversation about web development.
+              I help businesses and startups build production-ready React applications that scale.
+              Whether you need a new application built from scratch, an existing codebase optimized,
+              or a complex feature implemented, I deliver solutions that meet your technical and
+              business requirements.
             </p>
-            <div className="contact-links">
-              {contactInfo.map((info, index) => (
-                <a
-                  key={index}
-                  href={info.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="contact-link"
-                >
-                  <span className="contact-link-type">{info.type}:</span>
-                  <span className="contact-link-value">{info.value}</span>
-                </a>
-              ))}
+            <div className="contact-cta">
+              <p className="contact-cta-text">Get in touch via:</p>
+              <div className="contact-links">
+                {contactInfo.map((info, index) => (
+                  <a
+                    key={index}
+                    href={info.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="contact-link"
+                  >
+                    <span className="contact-link-icon">{info.icon}</span>
+                    <div className="contact-link-content">
+                      <span className="contact-link-type">{info.type}</span>
+                      <span className="contact-link-value">{info.value}</span>
+                    </div>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
           <form className="contact-form" onSubmit={handleSubmit}>
@@ -104,6 +115,12 @@ const Contact = () => {
             <button type="submit" className="btn btn-primary">
               Send Message
             </button>
+            <p className="form-note">
+              Prefer email? Reach out directly at{' '}
+              <a href="mailto:john.doe@example.com" className="form-email-link">
+                john.doe@example.com
+              </a>
+            </p>
           </form>
         </div>
       </div>

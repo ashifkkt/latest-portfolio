@@ -13,25 +13,27 @@ const Hero = () => {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">
-            Hi, I'm <span className="hero-name">John Doe</span>
+            <span className="hero-name">John Doe</span>
           </h1>
-          <h2 className="hero-subtitle">React Developer</h2>
+          <h2 className="hero-subtitle">Senior React.js Developer</h2>
           <p className="hero-description">
-            Building modern, scalable web applications with React and cutting-edge technologies.
-            Passionate about clean code, user experience, and continuous learning.
+            I architect and build enterprise-grade React applications that scale to serve 
+            hundreds of thousands of users. With 3+ years of experience in complex state management, 
+            performance optimization, and modern development practices, I deliver production-ready 
+            solutions that drive measurable business outcomes.
           </p>
           <div className="hero-buttons">
             <button
               className="btn btn-primary"
               onClick={() => scrollToSection('projects')}
             >
-              View My Work
+              View Projects
             </button>
             <button
               className="btn btn-secondary"
               onClick={() => scrollToSection('contact')}
             >
-              Get In Touch
+              Contact
             </button>
           </div>
         </div>

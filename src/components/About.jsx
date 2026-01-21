@@ -8,19 +8,21 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              I'm a React developer with over 3 years of experience building modern web applications.
-              I specialize in creating responsive, performant, and user-friendly interfaces using
-              React and its ecosystem.
+              With 3+ years of professional experience, I've architected and built React applications
+              serving hundreds of thousands of users across various industries. My approach centers on
+              solving real business challenges through well-structured code, scalable architecture, and
+              data-driven decision making.
             </p>
             <p>
-              My expertise includes developing complex state management solutions, optimizing
-              application performance, and implementing best practices for code maintainability.
-              I'm passionate about writing clean, scalable code and staying up-to-date with the
-              latest web technologies.
+              I specialize in building maintainable, performant React applications that scale. This includes
+              establishing robust component architectures, implementing efficient state management patterns,
+              and optimizing for performance at scale. I write code that other developers can understand,
+              extend, and maintain long-term.
             </p>
             <p>
-              When I'm not coding, I enjoy contributing to open-source projects, reading tech blogs,
-              and exploring new frameworks and libraries that can improve my development workflow.
+              I work closely with cross-functional teams—product managers, designers, and backend engineers—to
+              deliver features that align technical excellence with business objectives. I've led code reviews,
+              mentored junior developers, and established coding standards that improve team velocity and code quality.
             </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 .about {
-  padding: 5rem 0;
-  background-color: #ffffff;
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-background);
 }
 
 .about-content {
@@ -9,13 +9,13 @@
 }
 
 .about-text {
-  font-size: 1.125rem;
-  line-height: 1.8;
-  color: #555;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-secondary);
 }
 
 .about-text p {
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--spacing-lg);
 }
 
 .about-text p:last-child {
@@ -24,11 +24,11 @@
 
 @media (max-width: 768px) {
   .about {
-    padding: 3rem 0;
+    padding: var(--spacing-2xl) 0;
   }
 
   .about-text {
-    font-size: 1rem;
+    font-size: var(--font-size-base);
   }
 }
 

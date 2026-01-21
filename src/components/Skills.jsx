@@ -3,28 +3,28 @@ import './Skills.css';
 const Skills = () => {
   const skillCategories = [
     {
-      category: 'Frontend',
-      skills: ['React', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'SASS']
+      category: 'Core Technologies',
+      skills: ['React', 'JavaScript (ES6+)', 'TypeScript']
     },
     {
       category: 'State Management',
-      skills: ['Redux', 'Context API', 'Zustand', 'React Query']
+      skills: ['Redux', 'Context API', 'Custom Hooks', 'State Architecture']
     },
     {
-      category: 'Build Tools',
-      skills: ['Vite', 'Webpack', 'npm', 'Yarn']
+      category: 'Performance & Optimization',
+      skills: ['Code Splitting', 'Lazy Loading', 'Bundle Optimization', 'Memoization']
     },
     {
-      category: 'Testing',
-      skills: ['Jest', 'React Testing Library', 'Cypress']
+      category: 'APIs & Integration',
+      skills: ['REST APIs', 'Error Handling', 'Async Patterns', 'API Architecture']
     },
     {
-      category: 'Version Control',
-      skills: ['Git', 'GitHub', 'GitLab']
+      category: 'Development Practices',
+      skills: ['Component Architecture', 'Code Reviews', 'Testing', 'Git Workflow']
     },
     {
-      category: 'Other',
-      skills: ['REST APIs', 'GraphQL', 'Responsive Design', 'Accessibility']
+      category: 'Deployment & Tools',
+      skills: ['CI/CD', 'Production Deployment', 'Performance Monitoring', 'Debugging']
     }
   ];
 

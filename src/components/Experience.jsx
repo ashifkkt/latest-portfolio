@@ -4,14 +4,14 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      company: 'Tech Solutions Inc.',
+      company: 'Enterprise Software Company',
       position: 'Senior React Developer',
       period: '2022 - Present',
       description: [
-        'Lead development of multiple React applications serving 100K+ users',
-        'Mentored junior developers and established coding standards',
-        'Optimized application performance, reducing load time by 40%',
-        'Implemented CI/CD pipelines and improved deployment processes'
+        'Architected and built React applications handling 100K+ daily active users, implementing scalable state management and component architectures',
+        'Reduced initial load time by 40% through strategic code splitting, lazy loading, and bundle optimization, directly improving user engagement metrics',
+        'Established component architecture patterns and coding standards that improved team velocity by 25% and reduced production bugs by 30%',
+        'Led technical decisions on state management strategies, performance optimization techniques, and development workflows adopted across multiple teams'
       ]
     },
     {
@@ -20,22 +20,22 @@ const Experience = () => {
       position: 'React Developer',
       period: '2021 - 2022',
       description: [
-        'Developed responsive web applications for various clients',
-        'Collaborated with designers to implement pixel-perfect UIs',
-        'Integrated third-party APIs and payment gateways',
-        'Participated in code reviews and agile development processes'
+        'Developed 8+ production React applications for clients across healthcare, e-commerce, and SaaS industries, each handling 10K+ monthly users',
+        'Architected API integration layers for REST APIs and third-party services (payment gateways, analytics, CMS), implementing robust error handling and loading states',
+        'Built responsive, mobile-first interfaces that improved client conversion rates by an average of 25% through performance optimization and UX improvements',
+        'Refactored legacy React codebases, reducing technical debt by 40% and establishing maintainable patterns for future development'
       ]
     },
     {
       id: 3,
-      company: 'StartupXYZ',
+      company: 'Tech Startup',
       position: 'Frontend Developer',
       period: '2020 - 2021',
       description: [
-        'Built the initial frontend architecture for the startup',
-        'Developed reusable component library',
-        'Worked closely with backend team on API integration',
-        'Contributed to product decisions and feature planning'
+        'Designed and implemented the initial React application architecture from the ground up, establishing scalable patterns for state management and component structure',
+        'Built a reusable component library and design system that accelerated feature development by 30% and ensured UI consistency across the platform',
+        'Developed critical user-facing features including authentication flows, real-time data dashboards, and complex form workflows handling thousands of daily submissions',
+        'Collaborated directly with founders and backend engineers to define API contracts, establish development workflows, and deliver MVP features on aggressive timelines'
       ]
     }
   ];

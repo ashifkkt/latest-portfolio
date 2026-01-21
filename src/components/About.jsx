@@ -8,21 +8,21 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p>
-              I'm a React developer with 3+ years of professional experience building product-based SaaS applications.
-              I completed my B.Tech in Computer Science from MES College of Engineering, Kuttipuram (2017–2021), followed
-              by a MERN Stack internship at Tseep Academy. Since September 2022, I've been working as a Frontend Developer
-              at Texol iCohort, where I focus on building scalable frontend architectures for production SaaS applications.
+              I'm a React developer with 3+ years of experience building production SaaS applications at Texol iCohort, 
+              where I've worked on large-scale products serving enterprise clients. I hold a B.Tech in Computer Science 
+              from MES College of Engineering, Kuttipuram (2017–2021) and completed a MERN Stack internship at Tseep Academy 
+              before joining Texol iCohort in September 2022.
             </p>
             <p>
-              My work centers on product-based development—building and maintaining complex React frontends with clean architecture,
-              implementing role-based access control, real-time features, comprehensive dashboards, and admin panels. I prioritize
-              performance, maintainability, and user experience while collaborating closely with backend teams, product managers,
-              and designers to deliver features that meet both technical and business requirements.
+              My focus is on building scalable React frontends with clean architecture patterns. I specialize in implementing 
+              role-based access control, real-time features with Socket.io, comprehensive dashboards, and complex admin panels. 
+              I work with modern UI libraries including Ant Design, Material UI, Shadcn UI, and Tailwind CSS, and have experience 
+              integrating third-party APIs, Google Maps, and regulatory compliance systems like ZATCA.
             </p>
             <p>
-              I have familiarity with backend technologies including Node.js, Python, and basic Go, which helps me collaborate
-              effectively with backend teams and make informed architectural decisions. My experience spans from building complete
-              admin systems to implementing real-time features, third-party integrations, and complex data management workflows.
+              I collaborate effectively with backend teams, product managers, and designers to deliver features that balance 
+              technical excellence with business requirements. My familiarity with Node.js, Python, and basic Go helps me 
+              make informed architectural decisions and work seamlessly across the stack when needed.
             </p>
           </div>
         </div>

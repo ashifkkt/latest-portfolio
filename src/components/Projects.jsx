@@ -6,18 +6,17 @@ const Projects = () => {
       id: 1,
       title: 'Vanforces (Admin Panel)',
       overview:
-        'A comprehensive SaaS application based on van sales concept, featuring complete admin-side functionality for managing sales operations, tracking salesmen, and handling transactions.',
+        'Production SaaS application for van sales management with complete admin functionality. Built the entire admin interface using React and Ant Design, handling sales operations, real-time tracking, transactions, and regulatory compliance.',
       problem:
-        'Van sales businesses needed a centralized admin system to manage sales operations, track field salesmen in real-time, handle transactions, and generate invoices with regulatory compliance.',
+        'Van sales businesses required a centralized admin system to manage operations, track field salesmen in real-time, process transactions, and generate compliant invoices with ZATCA integration.',
       features: [
-        'Role-based authentication and access control',
-        'Real-time salesman tracking via mobile app settings with Google Maps integration',
-        'Live chat functionality using Socket.io for instant communication',
-        'Real-time notifications system',
-        'Invoice printing and generation using react-pdf',
-        'Transaction management for sales, collection, and load operations',
-        'E-invoicing integration with ZATCA for regulatory compliance',
-        'Custom report creation UI with dynamic column selection and report generation'
+        'Role-based authentication and granular access control',
+        'Real-time salesman tracking with Google Maps integration and mobile app synchronization',
+        'Socket.io-based live chat and real-time notifications',
+        'Invoice generation and printing using react-pdf',
+        'Transaction management system for sales, collections, and load operations',
+        'ZATCA e-invoicing integration for regulatory compliance',
+        'Custom report builder with dynamic column selection and export functionality'
       ],
       techStack: ['React', 'Ant Design', 'Socket.io', 'Google Maps API', 'REST APIs', 'react-pdf', 'ZATCA Integration'],
       liveDemo: 'https://admin.dev.vanforces.com/',
@@ -27,15 +26,15 @@ const Projects = () => {
       id: 2,
       title: 'Vanforces – Super Admin',
       overview:
-        'Office-level super admin system for managing plans, pricing, user subscriptions, and overall platform administration with scalable architecture.',
+        'Office-level super admin system built with React, TypeScript, and Shadcn UI. Manages multi-tenant subscriptions, pricing plans, user administration, and platform-wide settings with scalable architecture.',
       problem:
-        'The platform required a centralized super admin system to manage multiple tenants, subscription plans, pricing tiers, and user management at the organizational level.',
+        'The platform needed a centralized super admin system to manage multiple tenants, subscription plans, pricing tiers, and organizational-level user administration.',
       features: [
-        'Plan and pricing management system',
-        'User and subscription management',
-        'Multi-tenant administration',
-        'Scalable and maintainable architecture',
-        'Clean, professional UI layouts'
+        'Subscription plan and pricing management',
+        'Multi-tenant user and subscription administration',
+        'Platform-wide settings and configuration management',
+        'Scalable architecture with TypeScript for type safety',
+        'Clean, maintainable UI built with Shadcn UI'
       ],
       techStack: ['React', 'TypeScript', 'Shadcn UI', 'REST APIs', 'State Management'],
       liveDemo: 'https://admin.dev.vanforces.com/',
@@ -45,15 +44,15 @@ const Projects = () => {
       id: 3,
       title: 'Skipee (Restaurant Management System)',
       overview:
-        'A comprehensive restaurant management application for handling orders, table management, staff coordination, and complete restaurant workflow operations.',
+        'Production restaurant management system built with React and Material UI. Handles order processing, table management, staff coordination, and complete restaurant workflow operations.',
       problem:
-        'Restaurants needed an integrated system to manage daily operations including order processing, table assignments, staff management, and workflow coordination.',
+        'Restaurants required an integrated system to manage daily operations including real-time order processing, table assignments, staff scheduling, and end-to-end workflow coordination.',
       features: [
-        'Order management and processing system',
-        'Table assignment and management',
-        'Staff management and coordination',
-        'Complete restaurant workflow management',
-        'Production-ready, detailed system design'
+        'Real-time order management and processing',
+        'Table assignment and reservation management',
+        'Staff scheduling and coordination',
+        'Complete restaurant workflow automation',
+        'Production-ready system with Material UI components'
       ],
       techStack: ['React', 'Material UI', 'REST APIs', 'State Management'],
       liveDemo: 'https://spstg-skippy.texol.work/',
@@ -63,14 +62,15 @@ const Projects = () => {
       id: 4,
       title: 'Skipee Admin',
       overview:
-        'Admin panel for managing multiple restaurants under the Skipee platform, providing centralized management and comprehensive reporting capabilities.',
+        'Centralized admin panel built with React and Tailwind CSS for managing multiple restaurants. Provides unified administration, performance tracking, and comprehensive reporting across all restaurant locations.',
       problem:
-        'The platform required a centralized admin system to manage multiple restaurant locations, track performance across venues, and provide unified reporting.',
+        'The platform needed a centralized admin system to manage multiple restaurant locations, track performance metrics across venues, and provide unified reporting and analytics.',
       features: [
-        'Multi-restaurant management',
-        'Centralized reporting and analytics',
-        'Restaurant performance tracking',
-        'Unified dashboard for platform administration'
+        'Multi-restaurant management and administration',
+        'Centralized reporting and analytics dashboard',
+        'Restaurant performance tracking and metrics',
+        'Unified platform administration interface',
+        'Tailwind CSS for responsive, modern UI'
       ],
       techStack: ['React', 'Tailwind CSS', 'REST APIs', 'State Management'],
       liveDemo: 'https://skippy-stg.texol.work/',
@@ -80,16 +80,16 @@ const Projects = () => {
       id: 5,
       title: 'Alamawasil Web Portal',
       overview:
-        'A web portal for bulk invoice management, digital signing, and ZATCA integration, with comprehensive admin features for customer and invoice tracking.',
+        'Web portal built with React, TypeScript, and Shadcn UI for bulk invoice management, digital signing, and ZATCA integration. Includes comprehensive admin features for customer management, invoice tracking, and detailed reporting.',
       problem:
-        'Businesses needed a system to handle bulk invoice processing, digital signing workflows, ZATCA compliance, and comprehensive invoice management with detailed reporting.',
+        'Businesses required a system to handle bulk invoice processing, digital signing workflows, ZATCA regulatory compliance, and comprehensive invoice management with real-time tracking and detailed reporting.',
       features: [
-        'Bulk invoice upload and processing',
-        'Digital signing functionality',
-        'ZATCA integration for regulatory compliance',
-        'Customer management system',
-        'Invoice tracking and status monitoring',
-        'Detailed reporting on uploaded invoices and processing status'
+        'Bulk invoice upload and batch processing',
+        'Digital signing workflow and document management',
+        'ZATCA e-invoicing integration for regulatory compliance',
+        'Customer management and relationship tracking',
+        'Real-time invoice status monitoring and tracking',
+        'Comprehensive reporting on invoice processing and status'
       ],
       techStack: ['React', 'TypeScript', 'Shadcn UI', 'REST APIs', 'ZATCA Integration'],
       liveDemo: 'https://admin.almawasil.com/',

@@ -17,10 +17,9 @@ const Hero = () => {
           </h1>
           <h2 className="hero-subtitle">React.js Developer</h2>
           <p className="hero-description">
-            React developer with 3+ years of experience building scalable, responsive, and 
-            production-ready web applications. I specialize in building SaaS products, admin panels, 
-            and complex frontend architectures that handle real-time features, role-based access, 
-            and enterprise-level requirements.
+            Building production-ready SaaS applications and enterprise admin panels with React, TypeScript, 
+            and modern UI libraries. 3+ years of experience architecting scalable frontends, implementing 
+            real-time features, and delivering complex dashboards for product-based companies.
           </p>
           <div className="hero-buttons">
             <button

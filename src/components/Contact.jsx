@@ -58,10 +58,9 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-info">
             <p className="contact-intro">
-              I specialize in building production-ready React applications for SaaS products, admin panels,
-              and enterprise dashboards. Whether you need a complete frontend application, real-time features,
-              third-party integrations, or complex admin systems, I deliver scalable solutions that meet
-              your business requirements.
+              I build production-ready React applications for SaaS products, admin panels, and enterprise dashboards.
+              I specialize in scalable frontend architecture, real-time features, third-party API integrations, and 
+              complex admin systems. Let's discuss how I can help deliver your project.
             </p>
             <div className="contact-cta">
               <p className="contact-cta-text">Get in touch via:</p>

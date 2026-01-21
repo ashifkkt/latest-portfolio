@@ -8,11 +8,11 @@ const Experience = () => {
       position: 'Frontend Developer',
       period: 'Sep 2022 - Present',
       description: [
-        'Working on large-scale SaaS and product-based applications, building and maintaining complex React frontends with clean architecture',
-        'Implementing role-based access control, real-time features using Socket.io, comprehensive dashboards, and admin panels for enterprise clients',
-        'Building production-ready features including real-time tracking, Google Maps integration, invoice management, and custom reporting systems',
-        'Collaborating with backend teams, product managers, and designers to deliver scalable solutions that meet business requirements and user needs',
-        'Focusing on performance optimization, code maintainability, and user experience while working with modern React patterns and best practices'
+        'Architecting and building React frontends for large-scale SaaS applications, implementing clean component architecture and scalable state management patterns',
+        'Developing production features including role-based access control, real-time communication with Socket.io, Google Maps integration, and custom reporting systems',
+        'Building comprehensive admin panels and dashboards using React, TypeScript, Ant Design, Material UI, and Shadcn UI for enterprise clients',
+        'Implementing complex workflows including invoice management, e-invoicing with ZATCA integration, transaction processing, and bulk data operations',
+        'Collaborating with cross-functional teams to deliver features that meet technical requirements and business objectives, focusing on performance and maintainability'
       ]
     },
     {
@@ -21,10 +21,9 @@ const Experience = () => {
       position: 'MERN Stack Intern',
       period: 'May 2022 - Sep 2022',
       description: [
-        'Completed comprehensive MERN stack internship, gaining hands-on experience in full-stack development',
-        'Worked on real-world projects using React, Node.js, MongoDB, and Express, building end-to-end web applications',
-        'Learned industry best practices for frontend architecture, API integration, and database design',
-        'Developed foundational skills in building scalable applications and collaborating in a professional development environment'
+        'Completed MERN stack internship, building full-stack applications with React, Node.js, MongoDB, and Express',
+        'Developed end-to-end web applications, gaining practical experience in frontend architecture, REST API integration, and database design',
+        'Learned industry-standard development practices, code organization, and collaborative development workflows'
       ]
     }
   ];

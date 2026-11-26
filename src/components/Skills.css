@@ -43,7 +43,7 @@
 
 .skill-tag {
   padding: var(--spacing-xs) var(--spacing-md);
-  background-color: #eff6ff;
+  background-color: var(--color-primary-soft);
   color: var(--color-primary);
   border-radius: 20px;
   font-size: var(--font-size-sm);
@@ -53,7 +53,7 @@
 }
 
 .skill-tag:hover {
-  background-color: #dbeafe;
+  background-color: var(--color-primary-soft-hover);
 }
 
 @media (max-width: 768px) {
@@ -72,3 +72,8 @@
   }
 }
 
+
+.skill-tag { transition: transform var(--transition-fast), background-color var(--transition-fast); }
+.skill-tag:hover { transform: translateY(-3px) scale(1.06); }
+.skill-category { transition: transform var(--transition-base), box-shadow var(--transition-base); }
+.skill-category:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }

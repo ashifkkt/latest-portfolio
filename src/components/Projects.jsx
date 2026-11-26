@@ -1,163 +1,133 @@
+import { useState } from 'react';
 import './Projects.css';
+import { projects } from '../data/projects';
 
-const Projects = () => {
-  const projects = [
-    {
-      id: 1,
-      title: 'Vanforces (Admin Panel)',
-      overview:
-        'Production SaaS application for van sales management with complete admin functionality. Built the entire admin interface using React and Ant Design, handling sales operations, real-time tracking, transactions, and regulatory compliance.',
-      problem:
-        'Van sales businesses required a centralized admin system to manage operations, track field salesmen in real-time, process transactions, and generate compliant invoices with ZATCA integration.',
-      features: [
-        'Role-based authentication and granular access control',
-        'Real-time salesman tracking with Google Maps integration and mobile app synchronization',
-        'Socket.io-based live chat and real-time notifications',
-        'Invoice generation and printing using react-pdf',
-        'Transaction management system for sales, collections, and load operations',
-        'ZATCA e-invoicing integration for regulatory compliance',
-        'Custom report builder with dynamic column selection and export functionality'
-      ],
-      techStack: ['React', 'Ant Design', 'Socket.io', 'Google Maps API', 'REST APIs', 'react-pdf', 'ZATCA Integration'],
-      liveDemo: 'https://admin.dev.vanforces.com/',
-      github: '#'
-    },
-    {
-      id: 2,
-      title: 'Vanforces – Super Admin',
-      overview:
-        'Office-level super admin system built with React, TypeScript, and Shadcn UI. Manages multi-tenant subscriptions, pricing plans, user administration, and platform-wide settings with scalable architecture.',
-      problem:
-        'The platform needed a centralized super admin system to manage multiple tenants, subscription plans, pricing tiers, and organizational-level user administration.',
-      features: [
-        'Subscription plan and pricing management',
-        'Multi-tenant user and subscription administration',
-        'Platform-wide settings and configuration management',
-        'Scalable architecture with TypeScript for type safety',
-        'Clean, maintainable UI built with Shadcn UI'
-      ],
-      techStack: ['React', 'TypeScript', 'Shadcn UI', 'REST APIs', 'State Management'],
-      liveDemo: 'https://admin.dev.vanforces.com/',
-      github: '#'
-    },
-    {
-      id: 3,
-      title: 'Skipee (Restaurant Management System)',
-      overview:
-        'Production restaurant management system built with React and Material UI. Handles order processing, table management, staff coordination, and complete restaurant workflow operations.',
-      problem:
-        'Restaurants required an integrated system to manage daily operations including real-time order processing, table assignments, staff scheduling, and end-to-end workflow coordination.',
-      features: [
-        'Real-time order management and processing',
-        'Table assignment and reservation management',
-        'Staff scheduling and coordination',
-        'Complete restaurant workflow automation',
-        'Production-ready system with Material UI components'
-      ],
-      techStack: ['React', 'Material UI', 'REST APIs', 'State Management'],
-      liveDemo: 'https://spstg-skippy.texol.work/',
-      github: '#'
-    },
-    {
-      id: 4,
-      title: 'Skipee Admin',
-      overview:
-        'Centralized admin panel built with React and Tailwind CSS for managing multiple restaurants. Provides unified administration, performance tracking, and comprehensive reporting across all restaurant locations.',
-      problem:
-        'The platform needed a centralized admin system to manage multiple restaurant locations, track performance metrics across venues, and provide unified reporting and analytics.',
-      features: [
-        'Multi-restaurant management and administration',
-        'Centralized reporting and analytics dashboard',
-        'Restaurant performance tracking and metrics',
-        'Unified platform administration interface',
-        'Tailwind CSS for responsive, modern UI'
-      ],
-      techStack: ['React', 'Tailwind CSS', 'REST APIs', 'State Management'],
-      liveDemo: 'https://skippy-stg.texol.work/',
-      github: '#'
-    },
-    {
-      id: 5,
-      title: 'Alamawasil Web Portal',
-      overview:
-        'Web portal built with React, TypeScript, and Shadcn UI for bulk invoice management, digital signing, and ZATCA integration. Includes comprehensive admin features for customer management, invoice tracking, and detailed reporting.',
-      problem:
-        'Businesses required a system to handle bulk invoice processing, digital signing workflows, ZATCA regulatory compliance, and comprehensive invoice management with real-time tracking and detailed reporting.',
-      features: [
-        'Bulk invoice upload and batch processing',
-        'Digital signing workflow and document management',
-        'ZATCA e-invoicing integration for regulatory compliance',
-        'Customer management and relationship tracking',
-        'Real-time invoice status monitoring and tracking',
-        'Comprehensive reporting on invoice processing and status'
-      ],
-      techStack: ['React', 'TypeScript', 'Shadcn UI', 'REST APIs', 'ZATCA Integration'],
-      liveDemo: 'https://admin.almawasil.com/',
-      github: '#'
-    }
-  ];
+const VISIBLE_TAGS = 4;
+
+const ProjectCard = ({ project, index }) => {
+  const [open, setOpen] = useState(false);
+  const detailsId = `project-details-${project.id}`;
+  const hasRepo = Boolean(project.github);
+  const extra = project.techStack.length - VISIBLE_TAGS;
 
   return (
-    <section id="projects" className="projects">
-      <div className="container">
-        <h2 className="section-title">Projects</h2>
-        <div className="projects-grid">
-          {projects.map((project) => (
-            <div key={project.id} className="project-card">
-              <h3 className="project-title">{project.title}</h3>
-              <div className="project-overview">
-                <h4 className="project-section-label">Overview</h4>
-                <p className="project-text">{project.overview}</p>
-              </div>
-              <div className="project-problem">
-                <h4 className="project-section-label">Problem Solved</h4>
-                <p className="project-text">{project.problem}</p>
-              </div>
-              <div className="project-features">
-                <h4 className="project-section-label">Key Features</h4>
-                <ul className="project-features-list">
-                  {project.features.map((feature, index) => (
-                    <li key={index} className="project-feature-item">
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="project-tech">
-                <h4 className="project-section-label">Tech Stack</h4>
-                <div className="project-technologies">
-                  {project.techStack.map((tech, index) => (
-                    <span key={index} className="project-tech-tag">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div className="project-links">
-                <a
-                  href={project.liveDemo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link project-link-primary"
-                >
-                  Live Demo
-                </a>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link project-link-secondary"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
+    <article
+      className="project-card reveal"
+      style={{ '--i': index % 3 }}
+      onMouseMove={(e) => {
+        const r = e.currentTarget.getBoundingClientRect();
+        e.currentTarget.style.setProperty('--mx', `${e.clientX - r.left}px`);
+        e.currentTarget.style.setProperty('--my', `${e.clientY - r.top}px`);
+        e.currentTarget.style.setProperty('--ry', `${((e.clientX - r.left) / r.width - 0.5) * 8}deg`);
+        e.currentTarget.style.setProperty('--rx', `${-((e.clientY - r.top) / r.height - 0.5) * 8}deg`);
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.setProperty('--rx', '0deg');
+        e.currentTarget.style.setProperty('--ry', '0deg');
+      }}
+    >
+      {project.image ? (
+        <img className="project-cover" src={project.image} alt={`${project.title} screenshot`} loading="lazy" />
+      ) : (
+        <div className="project-cover project-cover-placeholder" aria-hidden="true">
+          <span>{project.category}</span>
+        </div>
+      )}
+      {project.company && <p className="project-company">{project.company}</p>}
+      <h3 className="project-title">{project.title}</h3>
+      <p className="project-text">{project.overview}</p>
+
+      <div className="project-technologies">
+        {project.techStack.slice(0, VISIBLE_TAGS).map((tech) => (
+          <span key={tech} className="project-tech-tag">{tech}</span>
+        ))}
+        {extra > 0 && <span className="project-tech-tag project-tech-more">+{extra}</span>}
+      </div>
+
+      <button
+        type="button"
+        className="project-toggle"
+        aria-expanded={open}
+        aria-controls={detailsId}
+        onClick={() => setOpen((o) => !o)}
+      >
+        {open ? 'Hide details' : 'Problem, features & full stack'}
+        <span className={`project-toggle-icon ${open ? 'open' : ''}`} aria-hidden="true">▾</span>
+      </button>
+
+      <div id={detailsId} className="project-details" hidden={!open}>
+        {project.role && (
+          <>
+            <h4 className="project-section-label">My Role</h4>
+            <p className="project-text">{project.role}</p>
+          </>
+        )}
+        {project.impact && project.impact.length > 0 && (
+          <>
+            <h4 className="project-section-label">Impact</h4>
+            <ul className="project-features-list">
+              {project.impact.map((i) => (
+                <li key={i} className="project-feature-item project-impact-item">{i}</li>
+              ))}
+            </ul>
+          </>
+        )}
+        <h4 className="project-section-label">Problem Solved</h4>
+        <p className="project-text">{project.problem}</p>
+        <h4 className="project-section-label">Key Features</h4>
+        <ul className="project-features-list">
+          {project.features.map((feature) => (
+            <li key={feature} className="project-feature-item">{feature}</li>
+          ))}
+        </ul>
+        {project.architecture && (
+          <>
+            <h4 className="project-section-label">Architecture</h4>
+            <p className="project-text">{project.architecture}</p>
+          </>
+        )}
+        <h4 className="project-section-label">Full Tech Stack</h4>
+        <div className="project-technologies">
+          {project.techStack.map((tech) => (
+            <span key={tech} className="project-tech-tag">{tech}</span>
           ))}
         </div>
       </div>
-    </section>
+
+      {project.caseStudy && (
+        <a href={`#/case/${project.caseStudy}`} className="project-case-link">Read the case study →</a>
+      )}
+
+      <div className="project-links">
+        {project.liveDemo && (
+          <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="project-link project-link-primary">
+            Live Demo
+          </a>
+        )}
+        {hasRepo ? (
+          <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link project-link-secondary">
+            GitHub
+          </a>
+        ) : (
+          <span className="project-private">Private client project</span>
+        )}
+      </div>
+    </article>
   );
 };
 
-export default Projects;
+const Projects = () => (
+  <section id="projects" className="projects">
+    <div className="container">
+      <h2 className="section-title reveal">Projects</h2>
+      <p className="section-subtitle reveal">Production applications built at Techon Innovations and Texol iCohort.</p>
+      <div className="projects-grid">
+        {projects.map((project, index) => (
+          <ProjectCard key={project.id} project={project} index={index} />
+        ))}
+      </div>
+    </div>
+  </section>
+);
 
+export default Projects;

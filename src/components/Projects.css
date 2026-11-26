@@ -92,7 +92,7 @@
 
 .project-tech-tag {
   padding: var(--spacing-xs) var(--spacing-sm);
-  background-color: #eff6ff;
+  background-color: var(--color-primary-soft);
   color: var(--color-primary);
   border-radius: var(--radius-sm);
   font-size: var(--font-size-xs);
@@ -102,7 +102,7 @@
 }
 
 .project-tech-tag:hover {
-  background-color: #dbeafe;
+  background-color: var(--color-primary-soft-hover);
 }
 
 .project-links {
@@ -125,13 +125,13 @@
 
 .project-link-primary {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-on-primary);
 }
 
 .project-link-primary:hover,
 .project-link-primary:focus-visible {
   background-color: var(--color-primary-hover);
-  color: white;
+  color: var(--color-on-primary);
 }
 
 .project-link-secondary {
@@ -143,7 +143,7 @@
 .project-link-secondary:hover,
 .project-link-secondary:focus-visible {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-on-primary);
 }
 
 @media (max-width: 768px) {
@@ -162,3 +162,111 @@
   }
 }
 
+
+.project-cover {
+  width: calc(100% + 2 * var(--spacing-xl));
+  margin: calc(-1 * var(--spacing-xl)) calc(-1 * var(--spacing-xl)) var(--spacing-lg);
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  display: block;
+}
+
+.project-cover-placeholder {
+  display: flex;
+  align-items: flex-end;
+  padding: var(--spacing-md) var(--spacing-xl);
+  background: linear-gradient(135deg, var(--color-primary-soft), var(--color-primary-soft-hover));
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-cover-placeholder span {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.project-technologies { margin-bottom: var(--spacing-md); }
+.project-tech-more { background: transparent; border-color: var(--color-border); color: var(--color-text-muted); }
+
+.project-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  background: none;
+  border: none;
+  padding: var(--spacing-xs) 0;
+  margin-bottom: var(--spacing-md);
+  font: inherit;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.project-toggle-icon { display: inline-block; transition: transform var(--transition-base); }
+.project-toggle-icon.open { transform: rotate(180deg); }
+
+.project-details { margin-bottom: var(--spacing-lg); }
+.project-details[hidden] { display: none; }
+.project-details .project-section-label:not(:first-child) { margin-top: var(--spacing-md); }
+.project-details .project-text { margin-bottom: var(--spacing-sm); }
+.project-details .project-features-list { margin-bottom: var(--spacing-sm); }
+
+.project-private {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .project-cover { width: calc(100% + 2 * var(--spacing-lg)); margin: calc(-1 * var(--spacing-lg)) calc(-1 * var(--spacing-lg)) var(--spacing-lg); }
+  .project-cover-placeholder { padding: var(--spacing-md) var(--spacing-lg); }
+}
+
+.project-card { position: relative; overflow: hidden; }
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 50%), var(--color-primary-soft-hover), transparent 65%);
+  transition: opacity var(--transition-slow);
+}
+.project-card:hover::before { opacity: 1; }
+.project-card:hover .project-cover-placeholder span { letter-spacing: 0.12em; }
+.project-cover-placeholder span { transition: letter-spacing var(--transition-slow); }
+
+.project-company {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-xs);
+}
+.project-tech-tag:hover { transform: translateY(-2px); }
+
+/* Cover images: keep 2:1 ratio, zoom on hover, tilt card toward the cursor */
+.project-cover { height: auto; aspect-ratio: 2 / 1; transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1); }
+.project-card:hover .project-cover { transform: scale(1.06); }
+.project-card:hover {
+  transform: perspective(900px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)) translateY(-6px);
+}
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .project-card:hover { transform: none; }
+}
+
+.project-impact-item { font-weight: 600; color: var(--color-text-primary); }
+.project-impact-item::before { content: '▲'; font-size: 0.7em; }
+
+.project-case-link {
+  display: inline-block; margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-sm); font-weight: 700; color: var(--color-primary); text-decoration: none;
+  transition: letter-spacing var(--transition-base);
+}
+.project-case-link:hover { letter-spacing: 0.03em; text-decoration: underline; }

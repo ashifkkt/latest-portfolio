@@ -29,3 +29,10 @@
     font-size: var(--font-size-3xl);
   }
 }
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-top: calc(-1 * var(--spacing-sm));
+  font-size: var(--font-size-lg);
+}
